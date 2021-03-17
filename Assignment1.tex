@@ -114,7 +114,7 @@ columns=fullflexible
      \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 \vspace{3cm}
 \title{AI1103 ASSIGNMENT 1}
-\author{MANNAM SARANDEEP-CS20BTECH11030}
+\author{Name:MANNAM SARANDEEP,Rollno:CS20BTECH11030}
 \maketitle
 \newpage
 \bigskip
@@ -135,26 +135,28 @@ https://github.com/sarandeepmannam/AI1103Assignment1/blob/main/Assignment1.tex
 \section{Problem-2.16}
 An urn contains 10 black and 5 white balls.Two balls are drawn from the urn one after the other without replacement.What is the probability that both balls are black?
 \section{Solution-2.16}
-Let's take two events A and B.
-\\A:The first ball is black
-\\B:The second ball is black
+Let X be a random variable taking two values 0 and 1(Bernoulli random variable).
+\\X=1 iff first ball is black and X=0 iff first ball is white.
+\\Let Y be another random variable taking two values 0 and 1(Bernoulli random variable). 
+\\Y=1 iff second ball is black and Y=0 iff second ball is white.
 \\We are required to find the probability of both the first and second balls to be black.
-\\The required probability is $P(A\cap B)$.
 \\The probability of taking first ball as black will be,
 \begin{align}
-P(A)=\frac{10}{15}=\frac{2}{3}
+P(X=0)=\frac{10}{15}=\frac{2}{3}
 \end{align}
-The probability of event B to be true given A is true(taking a black ball from 9 black and 5 white balls containing urn) will be,
+The probability of taking second ball as black given first ball taken was black will be,(Taking a black ball from urn containing 9 black and 5 white balls)
 \begin{align}
-P(B|A)=\frac{9}{14}
+P(Y=0|X=0)=\frac{9}{14}
 \end{align}
 By the definition of conditional probability,
 \begin{align}
-P(B|A)=\frac{P(A\cap B)}{P(A)}
+P(Y=0|X=0)=\frac{P(X=0\cap Y=0)}{P(X=0)}
 \end{align}
+
+from equations (2.0.1),(2.0.2) and (2.0.3)
 \begin{align}
-\implies P(A \cap B)=P(A)\times P(B|A)
-\\\implies P(A \cap B)=\frac{3}{7}=0.428571428571..
+P(X=0\cap Y=0)=P(X=0)\times P(Y=0|X=0)
+\\\implies P(X=0 \cap Y=0)=\frac{3}{7}=0.428571428571..
 \end{align}
 Hence,the required probability is 0.428571
 
