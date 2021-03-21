@@ -135,9 +135,9 @@ https://github.com/sarandeepmannam/AI1103Assignment1/blob/main/Assignment1.tex
 \section{Problem-2.16}
 An urn contains 10 black and 5 white balls.Two balls are drawn from the urn one after the other without replacement.What is the probability that both balls are black?
 \section{Solution-2.16}
-Let X be a random variable taking two values 0 and 1(Bernoulli random variable).
-\\X=1 iff first ball is black and X=0 iff first ball is white.
-\\Let Y be another random variable taking two values 0 and 1(Bernoulli random variable). 
+Let X be a random variable taking two values 0 and 1.
+\\X=1 iff first ball picked is black and X=0 iff first ball is white.
+\\Let Y be another random variable taking two values 0 and 1. 
 \\Y=1 iff second ball is black and Y=0 iff second ball is white.
 \\We are required to find the probability of both the first and second balls to be black.
 \\The probability of taking first ball as black will be,
@@ -150,13 +150,13 @@ P(Y=0|X=0)=\frac{9}{14}
 \end{align}
 By the definition of conditional probability,
 \begin{align}
-P(Y=0|X=0)=\frac{P(X=0\cap Y=0)}{P(X=0)}
+P(Y=0|X=0)=\frac{P(X=0, Y=0)}{P(X=0)}
 \end{align}
 
 from equations (2.0.1),(2.0.2) and (2.0.3)
 \begin{align}
-P(X=0\cap Y=0)=P(X=0)\times P(Y=0|X=0)
-\\\implies P(X=0 \cap Y=0)=\frac{3}{7}=0.428571428571..
+P(X=0, Y=0)=P(X=0)\times P(Y=0|X=0)
+\\\implies P(X=0 , Y=0)=\frac{3}{7}=0.428571428571..
 \end{align}
 Hence,the required probability is 0.428571
 
